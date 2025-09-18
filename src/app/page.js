@@ -1,9 +1,16 @@
-import CodeRunner from "@/components/CodeRunner";
+
+import Head from "next/head";
+import AdvancedCodeRunner from "./CodeRunner";
+
+
+
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <CodeRunner />
+    <main className="h-[100vh] w-[100vw] bg-gray-100 flex items-center justify-center p-4 ">
+    
+      <AdvancedCodeRunner />
+    
     </main>
   );
 }
