@@ -22,7 +22,7 @@ export default function About() {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await fetch("https://code-run-sigma.vercel.app/api/feedback");
+      const res = await fetch("api/feedback");
       const data = await res.json();
       setFeedbacks(data);
     } catch (err) {
@@ -51,7 +51,7 @@ export default function About() {
     e.preventDefault();
     if (!feedbackText.trim()) return;
     try {
-      const res = await fetch("https://code-run-sigma.vercel.app/api/feedback", {
+      const res = await fetch("api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: feedbackText }),
