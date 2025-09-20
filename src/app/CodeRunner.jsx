@@ -253,7 +253,8 @@ sys.stdout.getvalue()
         <h1 className="text-base font-bold text-indigo-500">Online Code Runner</h1>
         <div className="flex gap-2 flex-wrap items-center">
           {/* Font Size & Language */}
-          <input
+          <label>
+         Font Size:<input
             type="number"
             min="10"
             max="24"
@@ -261,14 +262,16 @@ sys.stdout.getvalue()
             onChange={(e) => setFontSize(Number(e.target.value))}
             className="w-14 text-xs p-1 rounded bg-gray-700 text-white"
           />
+            </label>
           <select
             value={language}
             onChange={(e) => handleLanguageChange(e.target.value)}
             className={`${darkMode ? "bg-gray-700 text-white" : "bg-gray-800 text-white"} p-1 text-xs rounded-md`}
           >
             <option value="javascript">JavaScript</option>
+             <option value="typescript">TypeScript</option>
             <option value="python">Python</option>
-            <option value="typescript">TypeScript</option>
+           
           </select>
 
           {/* Buttons */}
