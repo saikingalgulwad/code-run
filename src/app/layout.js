@@ -20,9 +20,9 @@ export const metadata = {
   description:
     "Code Run is a free online code editor to run JavaScript, Python, C, C++, and Java in your browser. No installation required!",
   applicationName: "Code Run",
-  authors: [{ name: "Code Run", url: "https://code-run-sigma.vercel.app" }],
-  publisher: "Code Run",
-  creator: "Code Run",
+  authors: [{ name: "Saiprasad Algulwad", url: "https://code-run-sigma.vercel.app" }],
+  publisher: "Saiprasad Algulwad",
+  creator: "Saiprasad Algulwad",
   keywords: [
     "online code editor",
     "run python online",
@@ -30,6 +30,7 @@ export const metadata = {
     "free IDE",
     "code playground",
     "online compiler",
+    "with suggestion",
   ],
   metadataBase: new URL("https://code-run-sigma.vercel.app"),
   alternates: { canonical: "https://code-run-sigma.vercel.app" },
